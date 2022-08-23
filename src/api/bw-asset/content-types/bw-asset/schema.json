@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bw_assets",
+  "info": {
+    "singularName": "bw-asset",
+    "pluralName": "bw-assets",
+    "displayName": "BW_asset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "key": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "value": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bw_pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::bw-page.bw-page",
+      "inversedBy": "bw_assets"
+    }
+  }
+}

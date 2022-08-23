@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bw_pages",
+  "info": {
+    "singularName": "bw-page",
+    "pluralName": "bw-pages",
+    "displayName": "BW_page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "uri": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bw_assets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::bw-asset.bw-asset",
+      "mappedBy": "bw_pages"
+    }
+  }
+}
