@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "bw_pages",
+  "collectionName": "bw_images",
   "info": {
-    "singularName": "bw-page",
-    "pluralName": "bw-pages",
-    "displayName": "BW_page",
+    "singularName": "bw-image",
+    "pluralName": "bw-images",
+    "displayName": "BW_image",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "model": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -24,7 +24,7 @@
         }
       }
     },
-    "uri": {
+    "brand": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -32,15 +32,31 @@
         }
       }
     },
-    "description": {
-      "type": "richtext",
+    "price": {
+      "type": "biginteger",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "name": {
+    "car_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "key": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -48,17 +64,19 @@
         }
       }
     },
-    "bw_assets": {
+    "color": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "bw_pages": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::bw-asset.bw-asset",
-      "mappedBy": "bw_pages"
-    },
-    "bw_images": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::bw-image.bw-image",
-      "inversedBy": "bw_pages"
+      "target": "api::bw-page.bw-page",
+      "inversedBy": "bw_images"
     }
   }
 }
