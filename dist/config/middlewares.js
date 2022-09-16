@@ -1,8 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = [
+    {
+        name: "strapi::security",
+        config: {
+            contentSecurityPolicy: {
+                useDefaults: true,
+                directives: {
+                    "connect-src": ["'self'", "https:"],
+                    "img-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
+                    "media-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
+                    upgradeInsecureRequests: null,
+                },
+            },
+        },
+    },
     "strapi::errors",
-    "strapi::security",
     "strapi::cors",
     "strapi::poweredBy",
     "strapi::logger",
