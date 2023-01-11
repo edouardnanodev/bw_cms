@@ -4,7 +4,7 @@
     "info": {
         "singularName": "bw-image",
         "pluralName": "bw-images",
-        "displayName": "BW_image",
+        "displayName": "bw_image",
         "description": ""
     },
     "options": {

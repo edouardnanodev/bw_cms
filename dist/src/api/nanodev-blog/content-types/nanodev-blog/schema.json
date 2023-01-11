@@ -16,7 +16,7 @@
         }
     },
     "attributes": {
-        "postID": {
+        "post_id": {
             "pluginOptions": {
                 "i18n": {
                     "localized": true
@@ -26,7 +26,7 @@
             "required": true,
             "minLength": 4
         },
-        "postCategory": {
+        "post_category": {
             "pluginOptions": {
                 "i18n": {
                     "localized": false
@@ -43,7 +43,7 @@
             ],
             "required": true
         },
-        "postTitle": {
+        "post_title": {
             "pluginOptions": {
                 "i18n": {
                     "localized": true
@@ -51,9 +51,9 @@
             },
             "type": "string",
             "required": true,
-            "maxLength": 40
+            "maxLength": 100
         },
-        "postDescription": {
+        "post_description": {
             "pluginOptions": {
                 "i18n": {
                     "localized": true
@@ -61,9 +61,9 @@
             },
             "type": "string",
             "required": true,
-            "maxLength": 150
+            "maxLength": 250
         },
-        "postImage": {
+        "post_image": {
             "type": "media",
             "multiple": false,
             "required": true,
@@ -76,7 +76,7 @@
                 }
             }
         },
-        "postContent": {
+        "post_content": {
             "pluginOptions": {
                 "i18n": {
                     "localized": true
@@ -85,7 +85,7 @@
             "type": "richtext",
             "required": true
         },
-        "postAt": {
+        "post_at": {
             "pluginOptions": {
                 "i18n": {
                     "localized": false
@@ -94,7 +94,7 @@
             "type": "date",
             "required": true
         },
-        "postAuthor": {
+        "post_author": {
             "pluginOptions": {
                 "i18n": {
                     "localized": false
@@ -102,18 +102,20 @@
             },
             "type": "enumeration",
             "enum": [
-                "Fabiola",
-                "Junior",
-                "Christelle",
-                "Bruno",
-                "Elmira",
-                "Ghislain",
-                "Thierry",
-                "Edouard"
+                "Fabiola TINGO",
+                "Junior SIMO",
+                "Bill SOMEN",
+                "Christelle BOYOMO",
+                "Bruno KENFACK",
+                "Elmira DEMANOU",
+                "Ghislain MELAH",
+                "Thierry LONTSI",
+                "Edouard YONGA",
+                "Yvan NANFACK"
             ],
             "required": true
         },
-        "postLink": {
+        "post_link": {
             "pluginOptions": {
                 "i18n": {
                     "localized": false
@@ -123,7 +125,7 @@
             "required": true,
             "default": "https://www.nanodev.ca/blog/"
         },
-        "postCommentAmt": {
+        "post_comment_amt": {
             "pluginOptions": {
                 "i18n": {
                     "localized": false
@@ -133,7 +135,7 @@
             "default": 0,
             "required": false
         },
-        "postLikesAmt": {
+        "post_likes_amt": {
             "pluginOptions": {
                 "i18n": {
                     "localized": false

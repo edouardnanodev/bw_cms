@@ -4,7 +4,7 @@
   "info": {
     "singularName": "bw-page",
     "pluralName": "bw-pages",
-    "displayName": "BW_page",
+    "displayName": "bw_page",
     "description": ""
   },
   "options": {
@@ -58,7 +58,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::bw-image.bw-image",
-      "inversedBy": "bw_pages"
+      "mappedBy": "bw_pages"
     }
   }
 }

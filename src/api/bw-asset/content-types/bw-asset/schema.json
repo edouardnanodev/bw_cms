@@ -4,7 +4,7 @@
   "info": {
     "singularName": "bw-asset",
     "pluralName": "bw-assets",
-    "displayName": "BW_asset",
+    "displayName": "bw_asset",
     "description": ""
   },
   "options": {
