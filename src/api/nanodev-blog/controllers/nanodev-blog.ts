@@ -1,5 +1,5 @@
 /**
- *  nanodev-blog controller
+ * nanodev-blog controller
  */
 
 import { factories } from '@strapi/strapi'

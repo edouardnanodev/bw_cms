@@ -1,6 +1,6 @@
 "use strict";
 /**
- * nanodev-blog service.
+ * nanodev-blog service
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 const strapi_1 = require("@strapi/strapi");

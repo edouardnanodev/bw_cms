@@ -19,12 +19,11 @@
         "post_id": {
             "pluginOptions": {
                 "i18n": {
-                    "localized": true
+                    "localized": false
                 }
             },
             "type": "string",
-            "required": true,
-            "minLength": 4
+            "required": true
         },
         "post_category": {
             "pluginOptions": {
@@ -34,14 +33,13 @@
             },
             "type": "enumeration",
             "enum": [
-                "Tips",
-                "Test",
                 "Technology",
-                "Software",
-                "Development",
-                "Web"
+                "Programming",
+                "Tips",
+                "AI"
             ],
-            "required": true
+            "required": true,
+            "default": "Technology"
         },
         "post_title": {
             "pluginOptions": {
@@ -51,7 +49,7 @@
             },
             "type": "string",
             "required": true,
-            "maxLength": 100
+            "unique": true
         },
         "post_description": {
             "pluginOptions": {
@@ -60,8 +58,7 @@
                 }
             },
             "type": "string",
-            "required": true,
-            "maxLength": 250
+            "required": true
         },
         "post_image": {
             "type": "media",
@@ -102,16 +99,14 @@
             },
             "type": "enumeration",
             "enum": [
-                "Fabiola TINGO",
-                "Junior SIMO",
                 "Bill Somen",
-                "Christelle BOYOMO",
-                "Bruno KENFACK",
-                "Elmira DEMANOU",
-                "Ghislain MELAH",
-                "Thierry LONTSI",
-                "Edouard YONGA",
-                "Yvan NANFACK"
+                "Elmira Demanou",
+                "Bruno Kenfack",
+                "Fabiola Tingo",
+                "Thierry Lontsi",
+                "Eduard Yonga",
+                "Christelle Boyomo",
+                "Ghislain Melah"
             ],
             "required": true
         },
@@ -122,18 +117,8 @@
                 }
             },
             "type": "string",
-            "required": true,
-            "default": "https://www.nanodev.ca/blog/"
-        },
-        "post_comment_amt": {
-            "pluginOptions": {
-                "i18n": {
-                    "localized": false
-                }
-            },
-            "type": "integer",
-            "default": 0,
-            "required": false
+            "default": "https://www.nanodev.ca/blog/",
+            "required": true
         },
         "post_likes_amt": {
             "pluginOptions": {
@@ -142,6 +127,7 @@
                 }
             },
             "type": "integer",
+            "required": true,
             "default": 0
         }
     }
