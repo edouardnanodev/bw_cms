@@ -1,0 +1,35 @@
+{
+    "kind": "collectionType",
+    "collectionName": "carelics",
+    "info": {
+        "singularName": "carelic",
+        "pluralName": "carelics",
+        "displayName": "Carelic"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "key": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "string"
+        },
+        "value": {
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            },
+            "type": "richtext"
+        }
+    }
+}
